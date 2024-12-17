@@ -25,13 +25,11 @@
   
           &:hover {
             background: #ff3b3f;
+            transition: 3s;
           }
         }
   
-        &.active a {
-          background: linear-gradient(to right, #ff3b3f, #e62e34);
-          border-radius: 10px 0 0 10px;
-        }
+        
   
         
       }

@@ -1,5 +1,6 @@
 import React from "react";
-import "./style.css"; // Import de CSS-bestanden voor styling
+import './scss/style.scss';
+ // Import de CSS-bestanden voor styling
 
 function Navigation() {
   return (
