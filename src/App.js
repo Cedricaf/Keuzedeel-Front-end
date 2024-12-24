@@ -38,7 +38,12 @@ function App() {
     <main>
       <Navigation />
       <section className="hero"></section>
-      <section className="information"></section>
+      <section className="information">
+        <div className="leftside"></div>
+        <div className="rightside">
+          
+        </div>
+      </section>
     </main>
   );
 }

@@ -2,7 +2,7 @@
   "name": "front-end",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cedricaf.github.io/Keuzedeel-Front-end",
+  "homepage": "https://ckiraly.com/Front-end",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
@@ -18,11 +18,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-    
   },
-
-  
-
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -44,6 +40,4 @@
   "devDependencies": {
     "gh-pages": "^6.2.0"
   }
-
-  
 }
