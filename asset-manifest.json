@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Front-end/static/css/main.1ccecb87.css",
-    "main.js": "/Front-end/static/js/main.835a5ac9.js",
-    "static/js/488.f16c8b15.chunk.js": "/Front-end/static/js/488.f16c8b15.chunk.js",
-    "index.html": "/Front-end/index.html",
-    "main.1ccecb87.css.map": "/Front-end/static/css/main.1ccecb87.css.map",
-    "main.835a5ac9.js.map": "/Front-end/static/js/main.835a5ac9.js.map",
-    "488.f16c8b15.chunk.js.map": "/Front-end/static/js/488.f16c8b15.chunk.js.map"
+    "main.css": "/Keuzedeel-Front-end/static/css/main.468f7cd1.css",
+    "main.js": "/Keuzedeel-Front-end/static/js/main.b1b90283.js",
+    "static/js/488.f16c8b15.chunk.js": "/Keuzedeel-Front-end/static/js/488.f16c8b15.chunk.js",
+    "index.html": "/Keuzedeel-Front-end/index.html",
+    "main.468f7cd1.css.map": "/Keuzedeel-Front-end/static/css/main.468f7cd1.css.map",
+    "main.b1b90283.js.map": "/Keuzedeel-Front-end/static/js/main.b1b90283.js.map",
+    "488.f16c8b15.chunk.js.map": "/Keuzedeel-Front-end/static/js/488.f16c8b15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ccecb87.css",
-    "static/js/main.835a5ac9.js"
+    "static/css/main.468f7cd1.css",
+    "static/js/main.b1b90283.js"
   ]
 }
