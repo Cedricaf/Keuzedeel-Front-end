@@ -8,7 +8,7 @@ function Navigation() {
     <nav className="navigation">
       <div className="logo">
         <img
-          src="GemeenteAmsterdam.svg"
+          src="https://www.amsterdam.nl/views/core/images/logos/andreas.svg"
           alt="logo gemeente Amsterdam"
         />
       </div>
@@ -17,20 +17,33 @@ function Navigation() {
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#">Agenda</a>
+          <a href="#">Mensen</a>
         </li>
         <li>
-          <a href="#">Organisatoren</a>
+          <a href="#">Expertise</a>
         </li>
         <li>
-          <a href="#">Ondernemers</a>
+          <a href="#">Opdrachten/Projecten</a>
         </li>
         <li>
-          <a href="#">Bewoners</a>
+          <a href="#">Publicaties</a>
         </li>
       </ul>
     </nav>
   );
+}
+
+
+function Footer(){
+  return (
+    <footer>
+        
+        <div class="social-icons" bis_skin_checked="1">
+        <p>© <span id="year">2025</span> Cedric Király. All Rights Reserved.</p>
+            
+        </div>
+    </footer>
+  )
 }
 
 function App() {
@@ -44,7 +57,9 @@ function App() {
           
         </div>
       </section>
+      <Footer/>
     </main>
+    
   );
 }
 

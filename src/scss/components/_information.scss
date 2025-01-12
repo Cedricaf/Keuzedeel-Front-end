@@ -1,29 +1,70 @@
-.information{
-    width: 80rem;
-    height: 30rem;
+.information {
+    width: 80vw; // Use viewport width for responsiveness
+    height: 50vh; // Use viewport height for responsiveness
     border: 0.1rem solid black;
     border-radius: 1.5rem;
     display: flex;
     padding: 1rem;
     gap: 1rem;
-}
 
-.leftside{
-    width: 100%;
-    height: 100%;
-    border: 0.1rem solid black;
-    border-radius: 1.5rem;
-}
+    // Add media queries for different screen sizes
+    @media (max-width: 768px) {
+        width: 90vw; // Adjust width for tablets and smaller devices
+        height: 40vh; // Adjust height for smaller screens
+    }
 
-.rightside{
-    width: 100%;
-    height: 100%;
-    border: 0.1rem solid black;
-    border-radius: 1.5rem;
-    background: blue;
-
-    img{
+    .rightside {
         width: 100%;
         height: 100%;
-    }
-}
+        border: 0.1rem solid black;
+        border-radius: 1.5rem;
+        background: blue;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            @media (max-width: 480px) {
+                width: 95vw; // Adjust width for mobile devices
+                height: 50vh; // Adjust height for mobile devices
+            }
+        }
+
+        .leftside {
+            width: 50%; // Adjust width for responsive layout
+            height: 100%;
+            border: 0.1rem solid black;
+            border-radius: 1.5rem;
+        }
+
+        .rightside {
+            width: 50%; // Adjust width for responsive layout
+            height: 100%;
+            border: 0.1rem solid black;
+            border-radius: 1.5rem;
+            background: red;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; // Ensure image covers the container
+            }
+        }
+
+        // Adjust layout for smaller devices
+        @media (max-width: 768px) {
+
+            .leftside,
+            .rightside {
+                width: 100%; // Stack the left and right sides on top of each other on smaller screens
+            }
+        }
+
+        @media (max-width: 480px) {
+            .information {
+                flex-direction: column; // Stack elements vertically on mobile
+                gap: 0.5rem; // Reduce gap on smaller screens
+            }
+        }
+    }    
+}   

@@ -1,52 +1,90 @@
 .navigation {
-    display: flex;
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 0;
-  
-    ul {
+  display: flex;
+  background-color: #b1a8ab;
+  border-radius: 10px;
+  padding: 0;
+
+  ul {
       list-style: none;
       display: flex;
       margin: 0;
       padding: 0;
       overflow: hidden;
-  
+
       li {
-        flex: 1;
-        text-align: center;
-  
-        a {
-          display: block;
-          padding: 2rem 2rem;
-          color: black;
-          font-weight: bold;
-          text-decoration: none;
-          transition: background 0.3s;
-  
-          &:hover {
-            background: #ff3b3f;
-            transition: 2.5s;
+          flex: 1;
+          text-align: center;
+
+          a {
+              display: block;
+              padding: 2rem 2rem;
+              color: #eee;
+              font-weight: bold;
+              text-decoration: none;
+              transition: background 0.3s;
+
+              &:hover {
+                  background: rgb(25, 25, 245);
+                  transition: 1s;
+                  border-radius: 0.4rem;
+                  color: #eee;
+              }
           }
-        }
-  
-        
-  
-        
       }
-    }
   }
+
+  // Add media queries for responsiveness
+  @media (max-width: 768px) {
+      ul {
+          flex-direction: column; // Stack the menu items vertically on smaller screens
+      }
+
+      li {
+          width: 100%; // Ensure each item takes full width
+      }
+
+      a {
+          padding: 1.5rem; // Reduce padding on smaller screens
+      }
+  }
+
+  @media (max-width: 480px) {
+      ul {
+          flex-direction: column; // Ensure vertical stacking on mobile devices
+      }
+
+      a {
+          padding: 1rem; // Further reduce padding for mobile devices
+      }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  
   
 
-.logo{
-    display: flex;
-    align-items: center ;
-    justify-content: center;
-    width: 5rem;
-    height: 5rem;
+  img {
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 
-    img{
-        padding: 0.5rem;
-        width: 100%;
-        height: 100%
-    };
+  // Add responsiveness for logo
+  @media (max-width: 768px) {
+      .navigation div img{
+        background: red;
+      }
+
+  }
+
+  @media (max-width: 480px) {
+      width: 3rem;  // Adjust logo size for mobile devices
+      height: 3rem;
+  }
 }
