@@ -1,9 +1,20 @@
-.hero{
+.hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80rem;
-    height: 30rem;
+    width: 80vw;  // Use viewport width for responsiveness
+    height: 30rem; // Use viewport height for responsiveness
     border: 0.1rem solid black;
     border-radius: 1.5rem;
+    
+    // Add media queries for different screen sizes
+    @media (max-width: 768px) {
+        width: 90vw; // Adjust width for tablets and smaller devices
+        height: 40vh; // Adjust height for smaller screens
+    }
+
+    @media (max-width: 480px) {
+        width: 95vw; // Adjust width for mobile devices
+        height: 50vh; // Adjust height for mobile devices
+    }
 }
