@@ -5,57 +5,56 @@
   padding: 0;
 
   ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 
-      li {
-          flex: 1;
-          text-align: center;
+    li {
+      flex: 1;
+      text-align: center;
 
-          a {
-              display: block;
-              padding: 2rem 2rem;
-              color: #eee;
-              font-weight: bold;
-              text-decoration: none;
-              transition: background 0.3s;
+      a {
+        display: block;
+        padding: 2rem 2rem;
+        color: #eee;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background 0.3s;
 
-              &:hover {
-                  background: rgb(25, 25, 245);
-                  transition: 1s;
-                  border-radius: 0.4rem;
-                  color: #eee;
-              }
-          }
+        &:hover {
+          background: linear-gradient(90deg, rgba(82,147,108,1) 0%, rgba(8,112,107,1) 17%, rgba(82,147,108,1) 98%);
+          border-radius: 0.4rem;
+          color: #eee;
+        }
       }
+    }
   }
 
   // Add media queries for responsiveness
   @media (max-width: 768px) {
-      ul {
-          flex-direction: column; // Stack the menu items vertically on smaller screens
-      }
+    ul {
+      flex-direction: column; // Stack the menu items vertically on smaller screens
+    }
 
-      li {
-          width: 100%; // Ensure each item takes full width
-      }
+    li {
+      width: 100%; // Ensure each item takes full width
+    }
 
-      a {
-          padding: 1.5rem; // Reduce padding on smaller screens
-      }
+    a {
+      padding: 1.5rem; // Reduce padding on smaller screens
+    }
   }
 
   @media (max-width: 480px) {
-      ul {
-          flex-direction: column; // Ensure vertical stacking on mobile devices
-      }
+    ul {
+      flex-direction: column; // Ensure vertical stacking on mobile devices
+    }
 
-      a {
-          padding: 1rem; // Further reduce padding for mobile devices
-      }
+    a {
+      padding: 1rem; // Further reduce padding for mobile devices
+    }
   }
 }
 
@@ -65,8 +64,8 @@
   justify-content: center;
   width: 5rem;
   height: 5rem;
-  
-  
+
+
 
   img {
     padding: 0.5rem;
@@ -77,14 +76,14 @@
 
   // Add responsiveness for logo
   @media (max-width: 768px) {
-      .navigation div img{
-        background: red;
-      }
+    .navigation div img {
+      background: red;
+    }
 
   }
 
   @media (max-width: 480px) {
-      width: 3rem;  // Adjust logo size for mobile devices
-      height: 3rem;
+    width: 3rem; // Adjust logo size for mobile devices
+    height: 3rem;
   }
 }

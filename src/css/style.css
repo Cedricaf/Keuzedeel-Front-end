@@ -24,8 +24,7 @@
   transition: background 0.3s;
 }
 .navigation ul li a:hover {
-  background: rgb(25, 25, 245);
-  transition: 1s;
+  background: linear-gradient(90deg, rgb(82, 147, 108) 0%, rgb(8, 112, 107) 17%, rgb(82, 147, 108) 98%);
   border-radius: 0.4rem;
   color: #eee;
 }
