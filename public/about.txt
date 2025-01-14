@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Allerta
+- Font Title: Leckerli One
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/allerta/v18/TwMO-IAHRlkbx940UnEdSQqO5uY.ttf
+- Font Source: https://fonts.gstatic.com/s/leckerlione/v20/V8mCoQH8VCsNttEnxnGQ-1itLZxcBtItFw.ttf
 - Font License: undefined)
