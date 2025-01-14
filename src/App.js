@@ -1,5 +1,9 @@
 import React from "react";
 import './scss/style.scss';
+import logo from "./img/andreas.webp";
+import Image1 from "./img/image_1.jpg";
+import image2 from "./img/Amsterdamse-grachten-van-bovenaf.webp";
+
 // Import de CSS-bestanden voor styling
 
 function Navigation() {
@@ -8,7 +12,7 @@ function Navigation() {
     <nav className="navigation">
       <div className="logo">
         <img
-          src="https://www.amsterdam.nl/views/core/images/logos/andreas.svg"
+          src={logo}
           alt="logo gemeente Amsterdam"
         />
       </div>
@@ -62,7 +66,7 @@ function App() {
     <main>
       <Navigation />
       <section className="hero">
-        <img className="hero-image" src="https://www.emagine.org/wp-content/uploads/2023/08/Header1.jpg" alt="description" />
+        <img className="hero-image" src={image2} alt="description" />
 
       </section>
       <section className="information">
