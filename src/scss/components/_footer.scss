@@ -1,63 +1,74 @@
+footer {
+  background-color: #FA5; /* A softer coral shade */
+  color: #fff;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  width: 100%; /* Full width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 
+  p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    animation: fadeIn 1s ease-out forwards;
+  }
 
-
-
-  
-  footer {
-    background-color: #b1a8ab;
-    color: #fff;
-    padding: 2em 0;
-    font-size: 0.9em;
-    border-radius: 0.5rem;
+  .social-icons {
     display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
-    width: 80vw;  // Use viewport width for responsiveness
-    height: 10vh;
-  
-    p {
-      margin: 0.5em 0;
-      animation: fadeIn 1s ease-out forwards;
-    }
-  
-    .social-icons {
-      display: flex;
-     
-      width: 100%;
-      height: 100%;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 1em;
-        
-      a {
-        color: #fff;
-        font-size: 1.5rem;
-        
-  
-        &:hover {
-          color: blue;
-          
-        }
-  
-        i {
-          transition: color 0.5s ease;
-          font-size: 115%;
-        }
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+
+    a {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        color: rgb(223, 149, 74);
+        transform: scale(1.2); /* Slight zoom on hover */
+      }
+
+      i {
+        font-size: 1.8rem;
       }
     }
-
-
-    @media (max-width: 768px) {
-        width: 90vw; // Adjust width for tablets and smaller devices
-        height: 40vh; // Adjust height for smaller screens
-    }
-
-    @media (max-width: 480px) {
-        width: 95vw; // Adjust width for mobile devices
-        height: 50vh; // Adjust height for mobile devices
-    }
-  
-    
   }
-  
+
+  /* Media query for tablets and smaller screens */
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    width: 90vw; /* Adjust width for tablets and smaller devices */
+    height: auto; /* Remove fixed height for flexibility */
+
+    .social-icons {
+      gap: 1rem;
+      a {
+        font-size: 1.2rem; /* Slightly smaller icons */
+      }
+    }
+  }
+
+  /* Media query for mobile screens */
+  @media (max-width: 480px) {
+    width: 95vw; /* Adjust width for mobile devices */
+    padding: 1rem;
+    height: auto; /* Remove fixed height for better responsiveness */
+    
+    .social-icons {
+      gap: 0.8rem;
+      a {
+        font-size: 1rem; /* Smaller icons on mobile */
+      }
+    }
+  }
+}
