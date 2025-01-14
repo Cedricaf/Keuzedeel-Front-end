@@ -21,7 +21,7 @@
 }
 .navigation ul li a {
   display: block;
-  padding: 2rem 2rem;
+  padding: 2rem 4.5rem;
   color: #eee;
   font-weight: bold;
   text-decoration: none;
@@ -87,6 +87,7 @@
   height: 30rem;
   border-radius: 1.5rem;
   padding: 1rem;
+  position: relative;
 }
 @media (max-width: 768px) {
   .hero {
@@ -107,6 +108,35 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1.5rem;
+}
+
+.action-button {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  background-color: #FA5;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.action-button:hover {
+  background-color: rgb(223, 149, 74);
+}
+@media (max-width: 768px) {
+  .action-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .action-button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
 }
 
 .information {
@@ -143,9 +173,9 @@
   border-radius: 1.5rem;
   padding: 1rem;
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 0.5rem;
-  justify-content: center;
+  justify-content: left;
   flex-direction: column;
   /* Media query for smaller screens */
 }

@@ -41,22 +41,22 @@ function Navigation() {
 function Footer() {
   return (
     <footer>
-  <p>© <span id="year">2025</span> All Rights Reserved.</p>
-  <div class="social-icons">
-    <a href="#" aria-label="Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="#" aria-label="Twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="#" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="#" aria-label="LinkedIn">
-      <i class="fab fa-linkedin-in"></i>
-    </a>
-  </div>
-</footer>
+      <p>© <span id="year">2025</span> All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </footer>
 
   )
 }
@@ -67,8 +67,9 @@ function App() {
       <Navigation />
       <section className="hero">
         <img className="hero-image" src={image2} alt="description" />
-
+        <button className="action-button">Onze opdrachten en Projecten</button>
       </section>
+
       <section className="information">
         <div className="leftside">
           <h1>Het Projectmanagementbureau</h1>
