@@ -1,25 +1,32 @@
 .information {
-    width: 80vw; // Use viewport width for responsiveness
-    height: 50vh; // Use viewport height for responsiveness
-   
+    width: 80vw; /* Use viewport width for responsiveness */
+    height: 50vh; /* Use viewport height for responsiveness */
     border-radius: 1.5rem;
     display: flex;
-    
     padding: 1rem;
     gap: 1rem;
-    overflow: none;
+    overflow: hidden;
 
-    // Add media queries for different screen sizes
+    /* Media query for tablets and smaller screens */
     @media (max-width: 768px) {
-        width: 90vw; // Adjust width for tablets and smaller devices
-        height: 40vh; // Adjust height for smaller screens
+        width: 90vw; /* Adjust width for tablets and smaller devices */
+        height: auto; /* Adjust height for smaller screens */
+        flex-direction: column; /* Stack the content vertically */
+        gap: 1rem; /* Adjust gap for better spacing */
     }
 
+    /* Media query for mobile screens */
+    @media (max-width: 480px) {
+        width: 95vw; /* Adjust width for mobile devices */
+        height: auto; /* Adjust height for mobile screens */
+        padding: 1rem; /* Reduce padding for smaller screens */
+        flex-direction: column; /* Stack content vertically */
+        gap: 0.5rem; /* Reduce gap on smaller screens */
+    }
 
     .leftside {
-        width: 50%; // Adjust width for responsive layout
+        width: 50%; /* Adjust width for responsive layout */
         height: 100%;
-        border: 0.1rem solid black;
         border-radius: 1.5rem;
         padding: 1rem;
         display: flex;
@@ -28,29 +35,43 @@
         justify-content: center;
         flex-direction: column;
         
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            width: 100%; /* Take full width on smaller screens */
+            text-align: center; /* Center text */
+        }
     }
 
     .rightside {
-        width: 50%; // Adjust width for responsive layout
+        width: 50%; /* Adjust width for responsive layout */
         height: 100%;
-        border: 0.1rem solid black;
         border-radius: 1.5rem;
-
 
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover; // Ensure image covers the container
+            object-fit: cover; /* Ensure image covers the container */
             border-radius: 1.5rem;
         }
-    }
 
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            width: 100%; /* Take full width on smaller screens */
+            height: 250px; /* Limit image height on smaller screens */
+        }
+    }
 
     .leftside p {
         font-size: 1rem;
         line-height: 1.6;
         margin-bottom: 1.5rem;
         text-align: left;
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            font-size: 0.9rem; /* Adjust font size on smaller screens */
+            text-align: center; /* Center text on smaller screens */
+        }
     }
 
     .read-more-button {
@@ -59,8 +80,7 @@
         font-size: 1rem;
         font-weight: bold;
         color: #fff;
-        background-color: #b1a8ab;
-        /* Primary color */
+        background-color: #FA5; /* Primary color */
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -70,19 +90,18 @@
 
         /* Adjust hover effect */
         &:hover {
-            background-color: #0056b3;
-            /* Darker shade for hover */
+            background-color: rgb(223, 149, 74);
         }
 
-        // Adjust layout for smaller devices
-        @media (max-width: 768px) {}
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            font-size: 0.9rem; /* Adjust button font size */
+            padding: 0.6rem 1.2rem; /* Adjust padding */
+        }
 
         @media (max-width: 480px) {
-            .information {
-                flex-direction: column; // Stack elements vertically on mobile
-                gap: 0.5rem; // Reduce gap on smaller screens
-            }
+            font-size: 0.9rem; /* Adjust button font size for mobile */
+            padding: 0.5rem 1rem; /* Adjust padding for mobile */
         }
     }
-
 }
