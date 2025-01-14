@@ -4,8 +4,10 @@
     justify-content: center;
     width: 80vw;  // Use viewport width for responsiveness
     height: 30rem; // Use viewport height for responsiveness
-    border: 0.1rem solid black;
+    
     border-radius: 1.5rem;
+   
+    background: white;
     
     // Add media queries for different screen sizes
     @media (max-width: 768px) {
@@ -17,4 +19,11 @@
         width: 95vw; // Adjust width for mobile devices
         height: 50vh; // Adjust height for mobile devices
     }
+}
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
 }
