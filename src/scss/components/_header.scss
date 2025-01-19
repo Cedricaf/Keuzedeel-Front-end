@@ -69,11 +69,14 @@ header{
 
 
 @media (max-width: 768px) {
+  header{
+    position:static;
+  }
   .navigation {
     flex-wrap: wrap; /* Allow wrapping */
     height: auto; /* Adjust height dynamically */
     padding: 0.5rem 1rem;
-    position:static;
+    
     
   }
 
