@@ -1,8 +1,10 @@
 import React from "react";
 import './scss/style.scss';
 import logo from "./img/andreas.webp";
-import Image1 from "./img/image_1.jpg";
-import image2 from "./img/Amsterdamse-grachten-van-bovenaf.webp";
+import Image1 from "./img/48-5000x3333.webp";
+import image2 from "./img/61-3264x2448.webp";
+import image3 from "./img/74-4288x2848.webp";
+import { renderToStaticMarkup } from "react-dom/server";
 
 // Import de CSS-bestanden voor styling
 
@@ -37,10 +39,62 @@ function Navigation() {
   );
 }
 
+function Hero(){
+  return (
+    <section className="hero">
+        <img className="hero-image" src={Image1} alt="description" />
+        <button className="action-button">Onze opdrachten en Projecten</button>
+      </section>
+
+  )
+}
+
+
+function Information1(){
+  return (
+    <section className="information">
+        <div className="leftside">
+          <h1>Het Projectmanagementbureau</h1>
+          <p>
+            Bij het Projectmanagementbureau verzorgen vakmensen het project-, programma- en procesmanagement in de stad. We doen dat voor sociale, fysieke en economische projecten en programma’s. Daarnaast ontwikkelen wij samen met opdrachtgevers en maatschappelijke partners nieuwe kennis en werkwijzen die passen bij de vraagstukken van vandaag en morgen. Onze opdrachtgevers zijn: stad, stadsdelen, wijken, buurten en de regio.
+          </p>
+          <button className="read-more-button">Lees meer</button>
+        </div>
+        <div className="rightside">
+          <img src={image2} alt="Placeholder" />
+        </div>
+      </section>
+      
+
+      
+  )
+}
+
+function Information2(){
+  return (
+    <section className="information">
+      <div className="rightside">
+          <img src={image3} alt="Placeholder" />
+        </div>
+        <div className="leftside">
+          <h1>Het Projectmanagementbureau</h1>
+          <p>
+            Bij het Projectmanagementbureau verzorgen vakmensen het project-, programma- en procesmanagement in de stad. We doen dat voor sociale, fysieke en economische projecten en programma’s. Daarnaast ontwikkelen wij samen met opdrachtgevers en maatschappelijke partners nieuwe kennis en werkwijzen die passen bij de vraagstukken van vandaag en morgen. Onze opdrachtgevers zijn: stad, stadsdelen, wijken, buurten en de regio.
+          </p>
+          <button className="read-more-button">Lees meer</button>
+        </div>
+        
+      </section>
+      
+
+      
+  )
+}
 
 function Footer() {
   return (
     <footer>
+      <p>PMB is bereikbaar op werkdagen tussen 8.30 - 17.30 uur.</p>
       <p>© <span id="year">2025</span> All Rights Reserved.</p>
       <div class="social-icons">
         <a href="#" aria-label="Facebook">
@@ -64,38 +118,12 @@ function Footer() {
 function App() {
   return (
     <main>
-      <Navigation />
-      <section className="hero">
-        <img className="hero-image" src={image2} alt="description" />
-        <button className="action-button">Onze opdrachten en Projecten</button>
-      </section>
-
-      <section className="information">
-        <div className="leftside">
-          <h1>Het Projectmanagementbureau</h1>
-          <p>
-            Bij het Projectmanagementbureau verzorgen vakmensen het project-, programma- en procesmanagement in de stad. We doen dat voor sociale, fysieke en economische projecten en programma’s. Daarnaast ontwikkelen wij samen met opdrachtgevers en maatschappelijke partners nieuwe kennis en werkwijzen die passen bij de vraagstukken van vandaag en morgen. Onze opdrachtgevers zijn: stad, stadsdelen, wijken, buurten en de regio.
-          </p>
-          <button className="read-more-button">Lees meer</button>
-        </div>
-        <div className="rightside">
-          <img src="https://www.emagine.org/wp-content/uploads/2023/08/Header1.jpg" alt="Placeholder" />
-        </div>
-      </section>
-
-      <section className="information">
-        <div className="rightside">
-          <img src="https://www.emagine.org/wp-content/uploads/2023/08/Header1.jpg" alt="Placeholder" />
-        </div>
-        <div className="leftside">
-          <h1>Werken bij het PBM</h1>
-          <p>
-            Naast ca 500 medewerkers in vaste dienst heeft het Projectmanagementbureau een flexibele schil om pieken in het werk goed te kunnen opvangen. We huren regelmatig junior projectmanagers en managementondersteuning in via uitzendbureaus. De gemeente Amsterdam doet zaken met drie uitzendbureaus: Randstad, Tempo Team en Olympia. Heb je interesse? Neem dan vooral een kijkje op hun websites.
-          </p>
-          <button className="read-more-button">Lees meer</button>
-        </div>
-
-      </section>
+      <header><Navigation /></header>
+      
+      <Hero/>
+      <Information1/>
+      <Information2/>
+      
 
       <Footer />
     </main>

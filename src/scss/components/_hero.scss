@@ -1,59 +1,60 @@
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80vw; // Use viewport width for responsiveness
-    height: 30rem; // Use viewport height for responsiveness
-    border-radius: 1.5rem;
-    padding: 1rem;
-    position: relative; // To position the button within the hero section
-  
-    // Add media queries for different screen sizes
-    @media (max-width: 768px) {
-      width: 90vw; // Adjust width for tablets and smaller devices
-      height: 40vh; // Adjust height for smaller screens
-    }
-  
-    @media (max-width: 480px) {
-      width: 95vw; // Adjust width for mobile devices
-      height: 50vh; // Adjust height for mobile devices
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw; /* Use viewport width for responsiveness */
+  height: 30rem; /* Use fixed height for consistent layout */
+  border-radius: 1.5rem;
+  padding: 1rem;
+  position: relative; /* To position the button within the hero section */
+  overflow: hidden; /* Ensure the content stays inside the hero section */
+
+  @media (max-width: 768px) {
+    width: 90vw; /* Adjust width for tablets and smaller devices */
+    height: 40vh; /* Adjust height for smaller screens */
   }
-  
-  .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1.5rem;
+
+  @media (max-width: 480px) {
+    width: 95vw; /* Adjust width for mobile devices */
+    height: 50vh; /* Adjust height for mobile devices */
   }
-  
-  .action-button {
-    position: absolute; // Position button within the hero section
-    bottom: 5rem; // Distance from the bottom of the section
-    left: 5rem;
-    background-color: #FA5; // Red color for the button
-    color: white; // White text color
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
-    // Button hover effect
-    &:hover {
-      background-color: rgb(223, 149, 74);
-    }
-  
-    // Add media query for responsiveness
-    @media (max-width: 768px) {
-      font-size: 1rem; // Smaller font size on tablets
-      padding: 0.8rem 1.5rem; // Adjust padding on smaller devices
-    }
-  
-    @media (max-width: 480px) {
-      font-size: 0.9rem; // Smaller font size on mobile devices
-      padding: 0.7rem 1.2rem; // Adjust padding on mobile devices
-    }
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the hero section */
+  border-radius: 1.5rem; /* Consistent rounded corners */
+}
+
+.action-button {
+  position: absolute; /* Position button within the hero section */
+  bottom: 4rem; /* Adjust distance from the bottom */
+  left: 4rem; /* Adjust distance from the left */
+  background-color: #FA5; /* Button color */
+  color: white; /* Text color */
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: rgb(223, 149, 74);
+    transform: translateY(-3px); /* Add subtle hover effect */
   }
-  
+
+  @media (max-width: 768px) {
+    font-size: 1rem; /* Adjust font size on tablets */
+    padding: 0.8rem 1.5rem; /* Adjust padding on smaller devices */
+    bottom: 2.5rem; /* Adjust position for smaller screens */
+    left: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem; /* Adjust font size for mobile devices */
+    padding: 0.7rem 1.2rem; /* Adjust padding on mobile devices */
+   
+  }
+}
