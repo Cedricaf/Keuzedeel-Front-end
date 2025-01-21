@@ -178,8 +178,6 @@ header {
   height: auto; /* Allow content to dictate height */
   border-radius: 1.5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
   overflow: hidden;
   /* Media query for tablets and smaller screens */
@@ -200,7 +198,7 @@ header {
   }
 }
 .information .leftside {
-  width: 50%; /* Responsive width */
+  width: 100%; /* Responsive width */
   height: auto; /* Adjust height */
   border-radius: 1.5rem;
   padding: 1rem;
@@ -208,6 +206,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.5rem;
+  background-color: #fff;
   /* Text alignment */
   text-align: left;
   overflow-wrap: break-word; /* Prevent text overflow */
@@ -284,6 +283,100 @@ header {
     font-size: 0.9rem; /* Adjust font size */
     padding: 0.5rem 1rem; /* Adjust padding */
   }
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  width: 80vw; /* Use viewport width for responsiveness */
+  height: auto;
+  gap: 20px;
+  border-radius: 2rem;
+}
+.articles .article {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 1.5rem;
+  background-color: #fff;
+}
+.articles .article h2 {
+  margin-top: 0;
+}
+.articles .article p {
+  margin: 10px 0;
+}
+.articles .article button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FA5;
+  color: #fff;
+  cursor: pointer;
+}
+.articles .article button .articles {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.articles .article button .articles .article {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.articles .article button .articles .article h2 {
+  margin-top: 0;
+}
+.articles .article button .articles .article h2 .articles {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.articles .article button .articles .article h2 .articles .article {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.articles .article button .articles .article h2 .articles .article h2 {
+  margin-top: 0;
+}
+.articles .article button .articles .article h2 .articles .article p {
+  margin: 10px 0;
+}
+.articles .article button .articles .article h2 .articles .article button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.articles .article button .articles .article h2 .articles .article button:hover {
+  background-color: #0056b3;
+}
+.articles .article button .articles .article p {
+  margin: 10px 0;
+}
+.articles .article button .articles .article button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.articles .article button .articles .article button:hover {
+  background-color: #0056b3;
+}
+.articles .article button:hover {
+  background-color: #0056b3;
 }
 
 footer {

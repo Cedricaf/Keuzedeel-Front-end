@@ -39,57 +39,82 @@ function Navigation() {
   );
 }
 
-function Hero(){
+function Hero() {
   return (
     <section className="hero">
-        <img className="hero-image" src={Image1} alt="Foto van laptop op tafel" />
-        <button className="action-button">Onze opdrachten en Projecten</button>
-      </section>
+      <img className="hero-image" src={Image1} alt="Foto van laptop op tafel" />
+      <button className="action-button">Onze opdrachten en Projecten</button>
+    </section>
 
   )
 }
 
 
-function Information1(){
+function Information1() {
   return (
     <section className="information">
-        <div className="leftside">
-          <h1>Het Projectmanagementbureau</h1>
-          <p>
-            Bij het Projectmanagementbureau verzorgen vakmensen het project-, programma- en procesmanagement in de stad. We doen dat voor sociale, fysieke en economische projecten en programma’s. Daarnaast ontwikkelen wij samen met opdrachtgevers en maatschappelijke partners nieuwe kennis en werkwijzen die passen bij de vraagstukken van vandaag en morgen. Onze opdrachtgevers zijn: stad, stadsdelen, wijken, buurten en de regio.
-          </p>
-          <button className="read-more-button">Lees meer</button>
-        </div>
-        <div className="rightside">
-          <img src={image2} alt="zwart-wit foto van een stad van bovenaf" />
-        </div>
-      </section>
-      
+      <div className="leftside">
+        <h1>Het Projectmanagementbureau</h1>
+        <p>
+          Bij het Projectmanagementbureau verzorgen vakmensen het project-, programma- en procesmanagement in de stad. We doen dat voor sociale, fysieke en economische projecten en programma’s. Daarnaast ontwikkelen wij samen met opdrachtgevers en maatschappelijke partners nieuwe kennis en werkwijzen die passen bij de vraagstukken van vandaag en morgen. Onze opdrachtgevers zijn: stad, stadsdelen, wijken, buurten en de regio.
+        </p>
+        <button className="read-more-button">Lees meer</button>
+      </div>
+      <div className="rightside">
+        <img src={image2} alt="zwart-wit foto van een stad van bovenaf" />
+      </div>
+    </section>
 
-      
+
+
   )
 }
 
-function Information2(){
+function Information2() {
   return (
     <section className="information">
       <div className="rightside">
-          <img src={image3} alt="Roeiboot op zee met uitzicht op de brug van San Fransisco" />
-        </div>
-        <div className="leftside">
-          <h1>Het Projectmanagementbureau</h1>
-          <p>
-            Bij het Projectmanagementbureau verzorgen vakmensen het project-, programma- en procesmanagement in de stad. We doen dat voor sociale, fysieke en economische projecten en programma’s. Daarnaast ontwikkelen wij samen met opdrachtgevers en maatschappelijke partners nieuwe kennis en werkwijzen die passen bij de vraagstukken van vandaag en morgen. Onze opdrachtgevers zijn: stad, stadsdelen, wijken, buurten en de regio.
-          </p>
-          <button className="read-more-button">Lees meer</button>
-        </div>
-        
-      </section>
-      
+        <img src={image3} alt="Roeiboot op zee met uitzicht op de brug van San Fransisco" />
+      </div>
+      <div className="leftside">
+        <h1>Het Projectmanagementbureau</h1>
+        <p>
+          Bij het Projectmanagementbureau verzorgen vakmensen het project-, programma- en procesmanagement in de stad. We doen dat voor sociale, fysieke en economische projecten en programma’s. Daarnaast ontwikkelen wij samen met opdrachtgevers en maatschappelijke partners nieuwe kennis en werkwijzen die passen bij de vraagstukken van vandaag en morgen. Onze opdrachtgevers zijn: stad, stadsdelen, wijken, buurten en de regio.
+        </p>
+        <button className="read-more-button">Lees meer</button>
+      </div>
 
-      
+    </section>
+
+
+
+
   )
 }
+
+function Articles() {
+  return (
+    <section className="articles">
+      <div className="article">
+        <h2>Article 1</h2>
+        <p>This is a brief description of Article 1.</p>
+        <button onClick={() => alert('More info about Article 1')}>More Info</button>
+      </div>
+      <div className="article">
+        <h2>Article 2</h2>
+        <p>This is a brief description of Article 2.</p>
+        <button onClick={() => alert('More info about Article 2')}>More Info</button>
+      </div>
+      <div className="article">
+        <h2>Article 3</h2>
+        <p>This is a brief description of Article 3.</p>
+        <button onClick={() => alert('More info about Article 3')}>More Info</button>
+      </div>
+    </section>
+  );
+}
+
+
 
 function Footer() {
   return (
@@ -119,12 +144,11 @@ function App() {
   return (
     <main>
       <header><Navigation /></header>
-      
-      <Hero/>
-      <Information1/>
-      <Information2/>
-      
 
+      <Hero />
+      <Information1 />
+      <Information2 />
+      <Articles/>
       <Footer />
     </main>
 
