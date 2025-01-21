@@ -190,25 +190,18 @@ header {
     gap: 1rem; /* Adjust gap */
   }
 }
-@media (max-width: 480px) {
-  .information {
-    width: 95vw; /* Adjust width */
-    padding: 1rem; /* Reduce padding */
-    gap: 0.5rem; /* Reduce gap */
-  }
-}
 .information .leftside {
   width: 100%; /* Responsive width */
   height: auto; /* Adjust height */
   border-radius: 1.5rem;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  background-color: #fff;
+  background-color: white;
   /* Text alignment */
-  text-align: center;
+  text-align: left;
   overflow-wrap: break-word; /* Prevent text overflow */
   word-wrap: break-word;
   /* Media query for smaller screens */
@@ -218,8 +211,7 @@ header {
 }
 @media (max-width: 768px) {
   .information .leftside {
-    width: 100%; /* Full width on smaller screens */
-    text-align: center; /* Center align for smaller screens */
+    text-align: left; /* Center align for smaller screens */
   }
 }
 .information .rightside {
@@ -244,7 +236,7 @@ header {
 .information .leftside p {
   line-height: 1.6; /* Comfortable line height */
   margin-bottom: 1.5rem;
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
   /* Prevent text from disappearing */
   overflow-wrap: break-word;
@@ -278,110 +270,73 @@ header {
 @media (max-width: 768px) {
   .information .read-more-button {
     font-size: 0.9rem; /* Adjust font size */
-    padding: 0.6rem 1.2rem; /* Adjust padding */
   }
 }
 @media (max-width: 480px) {
   .information .read-more-button {
     font-size: 0.9rem; /* Adjust font size */
-    padding: 0.5rem 1rem; /* Adjust padding */
   }
 }
 
 .articles {
   display: flex;
-  flex-direction: column;
-  width: 80vw; /* Use viewport width for responsiveness */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 1rem; /* Consistent spacing */
+  width: 80vw; /* Responsive width */
   height: auto;
-  gap: 20px;
   border-radius: 2rem;
 }
 .articles .article {
-  padding: 20px;
-  border: 1px solid #ddd;
+  flex: 1 1 calc(33.333% - 2rem); /* Three columns by default */
+  min-width: 250px; /* Prevent articles from becoming too small */
+  padding: 1.5rem;
   border-radius: 1.5rem;
   background-color: #fff;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between;
 }
 .articles .article h2 {
-  margin-top: 0;
+  margin: 0;
+  font-size: 1.3rem;
 }
 .articles .article p {
-  margin: 10px 0;
+  margin: 1rem 0;
+  font-size: 1rem;
 }
 .articles .article button {
-  padding: 10px 15px;
+  padding: 0.8rem 1.2rem;
   border: none;
-  border-radius: 5px;
-  background-color: #FA5;
+  border-radius: 0.5rem;
+  background-color: #ffaa55;
   color: #fff;
+  font-weight: 400;
   cursor: pointer;
-}
-.articles .article button .articles {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-.articles .article button .articles .article {
-  flex: 1;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-}
-.articles .article button .articles .article h2 {
-  margin-top: 0;
-}
-.articles .article button .articles .article h2 .articles {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-.articles .article button .articles .article h2 .articles .article {
-  flex: 1;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-}
-.articles .article button .articles .article h2 .articles .article h2 {
-  margin-top: 0;
-}
-.articles .article button .articles .article h2 .articles .article p {
-  margin: 10px 0;
-}
-.articles .article button .articles .article h2 .articles .article button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-}
-.articles .article button .articles .article h2 .articles .article button:hover {
-  background-color: #0056b3;
-}
-.articles .article button .articles .article p {
-  margin: 10px 0;
-}
-.articles .article button .articles .article button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-}
-.articles .article button .articles .article button:hover {
-  background-color: #0056b3;
+  transition: background-color 0.3s;
 }
 .articles .article button:hover {
-  background-color: #0056b3;
+  background-color: #ffaa55;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .articles {
+    gap: 1.5rem; /* Adjust gap for medium screens */
+  }
+  .article {
+    flex: 1 1 calc(50% - 1.5rem); /* Two columns for medium screens */
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .articles {
+    padding: 1rem; /* Reduce padding on smaller screens */
+    width: 95%;
+  }
+  .article {
+    flex: 1 1 100%; /* Single column on small screens */
+  }
+}
 footer {
   background-color: #FA5; /* A softer coral shade */
   color: #fff;

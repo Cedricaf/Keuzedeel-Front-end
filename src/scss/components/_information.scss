@@ -16,34 +16,34 @@
   
     /* Media query for mobile screens */
     @media (max-width: 480px) {
-      width: 95vw; /* Adjust width */
-      padding: 1rem; /* Reduce padding */
-      gap: 0.5rem; /* Reduce gap */
+     
+      
+      
     }
   
     .leftside {
-
+      
       h1{
         font-size: 180%;
       }
       width: 100%; /* Responsive width */
       height: auto; /* Adjust height */
       border-radius: 1.5rem;
-      padding: 1rem;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 1rem;
-      background-color: #fff;
+      background-color: white;
       /* Text alignment */
-      text-align: center;
+      text-align: left;
       overflow-wrap: break-word; /* Prevent text overflow */
       word-wrap: break-word;
   
       /* Media query for smaller screens */
       @media (max-width: 768px) {
-        width: 100%; /* Full width on smaller screens */
-        text-align: center; /* Center align for smaller screens */
+        
+        text-align: left; /* Center align for smaller screens */
       }
     }
   
@@ -69,7 +69,7 @@
     .leftside p {
       line-height: 1.6; /* Comfortable line height */
       margin-bottom: 1.5rem;
-      text-align: center;
+      text-align: left;
       font-size: 1rem;
   
       /* Prevent text from disappearing */
@@ -104,12 +104,12 @@
       /* Media query for smaller screens */
       @media (max-width: 768px) {
         font-size: 0.9rem; /* Adjust font size */
-        padding: 0.6rem 1.2rem; /* Adjust padding */
+        
       }
   
       @media (max-width: 480px) {
         font-size: 0.9rem; /* Adjust font size */
-        padding: 0.5rem 1rem; /* Adjust padding */
+       
       }
     }
   }

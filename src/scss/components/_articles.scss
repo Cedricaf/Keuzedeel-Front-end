@@ -1,107 +1,69 @@
 .articles {
   display: flex;
-  flex-direction: column;
-  width: 80vw; /* Use viewport width for responsiveness */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 1rem; /* Consistent spacing */
+  width: 80vw; /* Responsive width */
   height: auto;
-  gap: 20px;
-  border-radius: 2rem;
   
+  border-radius: 2rem;
 
   .article {
-    padding: 20px;
-    border: 1px solid #ddd;
+    flex: 1 1 calc(33.333% - 2rem); /* Three columns by default */
+    min-width: 250px; /* Prevent articles from becoming too small */
+    padding: 1.5rem;
+    
     border-radius: 1.5rem;
     background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between;
 
     h2 {
-      margin-top: 0;
+      margin: 0;
+      font-size: 1.3rem;
     }
 
     p {
-      margin: 10px 0;
+      margin: 1rem 0;
+      font-size: 1rem;
     }
 
     button {
-      padding: 10px 15px;
+      padding: 0.8rem 1.2rem;
       border: none;
-      border-radius: 5px;
-      background-color: #FA5;    .articles {
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-      padding: 20px;
-      background-color: #f9f9f9;
-    
-      .article {
-        flex: 1;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-color: #fff;
-    
-        h2 {
-          margin-top: 0;        .articles {
-          display: flex;
-          flex-direction: row;
-          gap: 20px;
-          padding: 20px;
-          background-color: #f9f9f9;
-        
-          .article {
-            flex: 1;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #fff;
-        
-            h2 {
-              margin-top: 0;
-            }
-        
-            p {
-              margin: 10px 0;
-            }
-        
-            button {
-              padding: 10px 15px;
-              border: none;
-              border-radius: 5px;
-              background-color: #007bff;
-              color: #fff;
-              cursor: pointer;
-        
-              &:hover {
-                background-color: #0056b3;
-              }
-            }
-          }
-        }
-        }
-    
-        p {
-          margin: 10px 0;
-        }
-    
-        button {
-          padding: 10px 15px;
-          border: none;
-          border-radius: 5px;
-          background-color: #007bff;
-          color: #fff;
-          cursor: pointer;
-    
-          &:hover {
-            background-color: #0056b3;
-          }
-        }
-      }
-    }
+      border-radius: 0.5rem;
+      background-color: #ffaa55;
       color: #fff;
+      font-weight: 400;
       cursor: pointer;
+      transition: background-color 0.3s;
 
       &:hover {
-        background-color: #0056b3;
+        background-color: #ffaa55;
       }
     }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .articles {
+    gap: 1.5rem; /* Adjust gap for medium screens */
+  }
+
+  .article {
+    flex: 1 1 calc(50% - 1.5rem); /* Two columns for medium screens */
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .articles {
+    padding: 1rem; /* Reduce padding on smaller screens */
+    width: 95%;
+  }
+
+  .article {
+    flex: 1 1 100%; /* Single column on small screens */
   }
 }

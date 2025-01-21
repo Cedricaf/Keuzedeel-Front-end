@@ -56,7 +56,9 @@ function Information1() {
       <div className="leftside">
         <h1>Het Projectmanagementbureau</h1>
         <p>
-          Bij het Projectmanagementbureau verzorgen vakmensen het project-, programma- en procesmanagement in de stad. We doen dat voor sociale, fysieke en economische projecten en programma’s. Daarnaast ontwikkelen wij samen met opdrachtgevers en maatschappelijke partners nieuwe kennis en werkwijzen die passen bij de vraagstukken van vandaag en morgen. Onze opdrachtgevers zijn: stad, stadsdelen, wijken, buurten en de regio.
+        Bij het Projectmanagementbureau verzorgen vakmensen het project-, programma- en procesmanagement in de stad. We doen dat voor sociale, fysieke en economische projecten en programma’s. Daarnaast ontwikkelen wij samen met opdrachtgevers en maatschappelijke partners nieuwe kennis en werkwijzen die passen bij de vraagstukken van vandaag en morgen. Onze opdrachtgevers zijn: stad, stadsdelen, wijken, buurten en de regio.
+
+Het Projectmanagementbureau is een open, lerende en flexibele organisatie met ruim 500 medewerkers. Er werken projectmanagers, bouwmanagers, adviseurs maatschappelijk vastgoed, planningsadviseurs en topadviseurs, die in opdracht de functie van manager, regisseur en project- of programmadirecteur vervullen. Met talent als basis en diversiteit als kracht werken we samen aan de ontwikkeling en de toekomst van Amsterdam.
         </p>
         
       </div>
@@ -96,20 +98,21 @@ function Articles() {
   return (
     <section className="articles">
       <div className="article">
-        <h2>Article 1</h2>
-        <p>This is a brief description of Article 1.</p>
-        <button onClick={() => alert('More info about Article 1')}>More Info</button>
+        <h2>Programmamanagement</h2>
+        <p>Veranderopgave, strategiewijziging of complexe beleidsopgave? Onze programmanagers helpen u doelgericht bij de realisatie of uitvoering daarvan.</p>
+        <button onClick={() => alert('More info about Article 1')}>Lees Meer</button>
       </div>
       <div className="article">
-        <h2>Article 2</h2>
-        <p>This is a brief description of Article 2.</p>
-        <button onClick={() => alert('More info about Article 2')}>More Info</button>
+        <h2>Procesmanagement </h2>
+        <p>Een complex bestuurlijk proces met strijdige belangen? Onze procesmanagers organiseren en begeleiden de interactie tussen organisaties/partijen voor een goede samenwerking.</p>
+        <button onClick={() => alert('More info about Article 2')}>Lees Meer</button>
       </div>
       <div className="article">
-        <h2>Article 3</h2>
-        <p>This is a brief description of Article 3.</p>
-        <button onClick={() => alert('More info about Article 3')}>More Info</button>
+        <h2>Bouwmanagement</h2>
+        <p>(Her)huisvesting, kantoren, scholen en sportcomplexen: onze bouwmanagers kennen de specifieke Amsterdamse situatie en regels en begeleiden het gehele proces van uw (maatschappelijk) vastgoed.</p>
+        <button onClick={() => alert('More info about Article 3')}>Lees Meer</button>
       </div>
+      
     </section>
   );
 }
