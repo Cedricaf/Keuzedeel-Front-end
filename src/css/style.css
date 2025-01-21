@@ -36,7 +36,7 @@ header {
   color: #eee;
   font-weight: bold;
   text-decoration: none;
-  padding: 100% 1.5rem;
+  padding: 2rem 1.5rem;
   transition: background 0.3s;
 }
 .navigation ul li a:hover {
@@ -377,4 +377,4 @@ main {
   box-sizing: border-box;
   color: #333;
   background: #ECECD9;
-}/*# sourceMappingURL=style.css.map */
+}
