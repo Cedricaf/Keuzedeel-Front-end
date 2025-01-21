@@ -204,14 +204,17 @@ header {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 1rem;
   background-color: #fff;
   /* Text alignment */
-  text-align: left;
+  text-align: center;
   overflow-wrap: break-word; /* Prevent text overflow */
   word-wrap: break-word;
   /* Media query for smaller screens */
+}
+.information .leftside h1 {
+  font-size: 180%;
 }
 @media (max-width: 768px) {
   .information .leftside {
@@ -241,7 +244,7 @@ header {
 .information .leftside p {
   line-height: 1.6; /* Comfortable line height */
   margin-bottom: 1.5rem;
-  text-align: left;
+  text-align: center;
   font-size: 1rem;
   /* Prevent text from disappearing */
   overflow-wrap: break-word;
@@ -466,8 +469,8 @@ main {
   font-family: sans-serif;
   font-weight: 400;
   margin: 0;
-  gap: 1.5rem;
+  gap: 1rem;
   box-sizing: border-box;
   color: #333;
   background: #ECECD9;
-}
+}/*# sourceMappingURL=style.css.map */

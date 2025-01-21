@@ -22,17 +22,21 @@
     }
   
     .leftside {
+
+      h1{
+        font-size: 180%;
+      }
       width: 100%; /* Responsive width */
       height: auto; /* Adjust height */
       border-radius: 1.5rem;
       padding: 1rem;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      gap: 0.5rem;
+      justify-content: center;
+      gap: 1rem;
       background-color: #fff;
       /* Text alignment */
-      text-align: left;
+      text-align: center;
       overflow-wrap: break-word; /* Prevent text overflow */
       word-wrap: break-word;
   
@@ -65,7 +69,7 @@
     .leftside p {
       line-height: 1.6; /* Comfortable line height */
       margin-bottom: 1.5rem;
-      text-align: left;
+      text-align: center;
       font-size: 1rem;
   
       /* Prevent text from disappearing */
