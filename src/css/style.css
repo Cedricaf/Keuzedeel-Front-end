@@ -278,6 +278,32 @@ header {
   }
 }
 
+.info-content {
+  width: 100%; /* Responsive width */
+  height: auto; /* Adjust height */
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.337);
+  /* Text alignment */
+  text-align: center;
+  overflow-wrap: break-word; /* Prevent text overflow */
+  word-wrap: break-word;
+  /* Media query for smaller screens */
+}
+.info-content h1 {
+  font-size: 180%;
+}
+@media (max-width: 768px) {
+  .info-content {
+    font-size: 150%;
+    text-align: center; /* Center align for smaller screens */
+  }
+}
+
 .articles {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */

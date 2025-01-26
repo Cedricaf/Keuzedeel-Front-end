@@ -6,36 +6,34 @@ import image2 from "./img/61-3264x2448.webp";
 import image3 from "./img/74-4288x2848.webp";
 
 
-// Import de CSS-bestanden voor styling
+
 
 function Navigation() {
   return (
 
     <nav className="navigation">
-      <div className="logo">
-        <img
-          src={logo}
-          alt="logo gemeente Amsterdam"
-        />
-      </div>
-      <ul>
-        <li className="active">
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Mensen</a>
-        </li>
-        <li>
-          <a href="#">Expertise</a>
-        </li>
-        <li>
-          <a href="#">Opdrachten/Projecten</a>
-        </li>
-        <li>
-          <a href="#">Publicaties</a>
-        </li>
-      </ul>
-    </nav>
+  <div className="logo">
+    <img src={logo} alt="logo gemeente Amsterdam" />
+  </div>
+  <ul className="menu">
+    <li className="active">
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Mensen</a>
+    </li>
+    <li>
+      <a href="#">Expertise</a>
+    </li>
+    <li>
+      <a href="#">Opdrachten/Projecten</a>
+    </li>
+    <li>
+      <a href="#">Publicaties</a>
+    </li>
+  </ul>
+</nav>
+
   );
 }
 
@@ -89,6 +87,30 @@ function Information2() {
     </section>
 
 
+  )
+}
+
+function Information3() {
+  return (
+    <section className="information">
+      
+      <div className="info-content">
+        <h1>Contact</h1>
+        <p>
+        Bezoekadres
+Weesperstraat 432
+1018 DN Amsterdam
+
+Postadres
+Postbus 1269
+1000 BG Amsterdam
+
+E: pmb.matchingenaccountmanagement@amsterdam.nl
+        </p>
+        
+      </div>
+
+    </section>
 
 
   )
@@ -100,17 +122,17 @@ function Articles() {
       <div className="article">
         <h2>Programmamanagement</h2>
         <p>Veranderopgave, strategiewijziging of complexe beleidsopgave? Onze programmanagers helpen u doelgericht bij de realisatie of uitvoering daarvan.</p>
-        <button onClick={() => alert('More info about Article 1')}>Lees Meer</button>
+        <button>Lees Meer</button>
       </div>
       <div className="article">
         <h2>Procesmanagement </h2>
         <p>Een complex bestuurlijk proces met strijdige belangen? Onze procesmanagers organiseren en begeleiden de interactie tussen organisaties/partijen voor een goede samenwerking.</p>
-        <button onClick={() => alert('More info about Article 2')}>Lees Meer</button>
+        <button>Lees Meer</button>
       </div>
       <div className="article">
         <h2>Bouwmanagement</h2>
         <p>(Her)huisvesting, kantoren, scholen en sportcomplexen: onze bouwmanagers kennen de specifieke Amsterdamse situatie en regels en begeleiden het gehele proces van uw (maatschappelijk) vastgoed.</p>
-        <button onClick={() => alert('More info about Article 3')}>Lees Meer</button>
+        <button>Lees Meer</button>
       </div>
       
     </section>
@@ -152,6 +174,7 @@ function App() {
       <Information1 />
       <Information2 />
       <Articles/>
+      <Information3/>
       <Footer />
     </main>
 
